@@ -93,7 +93,7 @@ function SendMail() {
         message: document.getElementById('message').value
     };
 
-    emailjs.send("service_wq8kr6e", "template_runiszv", params).then(function(res) {
+    emailjs.send("SERVICE KEY", "TEMPLATE KEY", params).then(function(res) {
         console.log("Success!", res.status); // Log success status
         alert("Your message has been sent successfully!"); // Alert success message
     }).catch(function(error) {
