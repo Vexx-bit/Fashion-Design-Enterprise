@@ -1,0 +1,132 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E0E6E9;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Scrollbar styling */
+body {
+    --sb-track-color: #6b5e12;
+    --sb-thumb-color: #007BFF;
+    --sb-size: 14px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+.gallery-container {
+    text-align: center;
+    padding: 1em;
+}
+
+.image-grid {
+    column-width: 7.5em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+}
+.footer {
+    background-color: #333333;
+    color: #F5F5F5;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-logo-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 160px;
+    height: 160px;
+    border: 2px solid #F5F5F5;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(234, 222, 5, 0.1);
+    background-color: white;
+}
+
+.footer img {
+    width: 100%;
+    height: auto;
+}
+
+.footer h3 {
+    color: #FFD700;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #FFD700;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-bottom: solid 1px #585a5c;
+}
+
+.footer .footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 10px 5px;
+    }
+
+    .footer .footer-section {
+        min-width: 100%;
+        margin: 5px 0;
+    }
+}

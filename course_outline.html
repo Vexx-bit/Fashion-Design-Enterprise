@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailored Items Gallery</title>
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css">
+    <style>
+        .gallery-nav {
+            display: flex;
+            align-items: center; 
+            gap: 10px; 
+        }
+
+        #back-btn {
+            font-size: 36px;
+            cursor: pointer;
+        }
+        .more{
+            text-align: center;
+        }
+        .course-details {
+            padding: 2rem;
+            background-color: #fff;
+            margin: 2rem auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        
+        .course-header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .course-header p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+        
+        .course-outline h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #007BFF;
+        }
+        
+        .module {
+            margin-bottom: 2rem;
+        }
+        
+        .module h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #007BFF;
+        }
+        
+        .module ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+        }
+        
+        .module ul li {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .module h3 {
+                font-size: 1.2rem;
+            }
+        
+            .module ul li {
+                font-size: 0.9rem;
+            }
+        
+            .navbar-brand {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-nav">
+        <span id="back-btn"><a href="index.html"><i class='bx bxs-chevron-left'></i></a></span>
+        <h1>Course Overview</h1>
+    </div>
+
+    <main class="course-details">
+        <section class="course-header">
+            <h1>January Intake 2024 - 6-Month Tailoring Course</h1>
+            <p>Master the art of tailoring with our comprehensive 6-month course starting in January 2024.</p>
+        </section>
+
+        <section class="course-outline">
+            <h2>Course Outline</h2>
+
+            <div class="module">
+                <h3>Module I: Fundamentals of Tailoring</h3>
+                <ul>
+                    <li>Introduction to Sewing Tools and Equipment</li>
+                    <li>Basic Sewing Techniques: Hand Stitching and Machine Stitching</li>
+                    <li>Fabric Selection and Handling</li>
+                    <li>Understanding Patterns and Measurements</li>
+                    <li>Basic Garment Construction: Seams, Hems, and Finishes</li>
+                    <li>Introduction to Tailoring Terminology</li>
+                    <li>Safety and Maintenance in Tailoring</li>
+                </ul>
+            </div>
+
+            <div class="module">
+                <h3>Module II: Intermediate Tailoring Techniques</h3>
+                <ul>
+                    <li>Intermediate Sewing Techniques: Zippers, Buttons, and Buttonholes</li>
+                    <li>Advanced Garment Construction Techniques</li>
+                    <li>Understanding Body Measurements and Sizing</li>
+                    <li>Pattern Alterations and Adjustments</li>
+                    <li>Introduction to Apparel Design Principles</li>
+                    <li>Introduction to Draping Techniques</li>
+                    <li>Tailoring Techniques for Collars, Cuffs, and Sleeves</li>
+                </ul>
+            </div>
+
+            <div class="module">
+                <h3>Module III: Dressmaking Essentials</h3>
+                <ul>
+                    <li>Introduction to Dressmaking Tools and Equipment</li>
+                    <li>Basic Dressmaking Techniques: Darts, Pleats, and Gathers</li>
+                    <li>Understanding Dress Styles and Silhouettes</li>
+                    <li>Introduction to Commercial Patterns and Pattern Adaptations</li>
+                    <li>Dress Fitting and Alterations</li>
+                    <li>Fabric Manipulation Techniques for Dressmaking</li>
+                    <li>Dress Embellishment and Decoration Techniques</li>
+                </ul>
+            </div>
+
+            <div class="module">
+                <h3>Module IV: Professional Development</h3>
+                <ul>
+                    <li>Introduction to Fashion Industry and Trends</li>
+                    <li>Basics of Fashion Illustration and Sketching</li>
+                    <li>Introduction to Textile Science and Fabric Technology</li>
+                    <li>Customer Service in Dressmaking and Tailoring</li>
+                    <li>Entrepreneurship in Fashion: Starting Your Own Tailoring Business</li>
+                    <li>Marketing and Promoting Your Tailoring Services</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Victory Fashion Designers and Training. All rights reserved.</p>
+
+    </footer>
+</div>
+</body>
+</html>
